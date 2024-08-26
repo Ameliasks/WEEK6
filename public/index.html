@@ -4,33 +4,38 @@
 </head>
 
 <body>
-    .row{
-        margin-top:40px;
-    }
-    .left-column{
-        float:left;
-        width:30%;
-        margin-left:30px;
-    }
-    .center-column{
-        width:30%;
-        margin:auto;
-    }
-    .right-column{
-        float:right;
-        width:30%;
-        margin:auto;
-    }
-    .image-container{
-        display: table-cell;
-        vertical-align: middle;
-        margin: auto;
-    }
+    <style>
+        .row{
+            margin-top:40px;
+        }
+        .left-column{
+            float:left;
+            width:30%;
+            margin-left:30px;
+        }
+        .center-column{
+            width:30%;
+            margin:auto;
+        }
+        .right-column{
+            float:right;
+            width:30%;
+            margin:auto;
+        }
+        .image-container{
+            display: table-cell;
+            vertical-align: middle;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
 
     <div class="row">
-        <div class="left-column"><div class="image-container"><img src="img/cir.png" height="200" width="200"/></div></div>
-        <div class="right-column"><div class="image-container"><img src="img/tri.png" height="200" width="200"/></div></div>
-        <div class="center-column"><div class="image-container"><img src="img/squ.png" height="200" width="200"/></div></div>
+        <div class="left-column"><div class="image-container"><img id="cir_id" src="img/cir.png" height="200" width="200"/></div></div>
+        <div class="right-column"><div class="image-container"><img id="tri" src="img/tri.png" height="200" width="200"/></div></div>
+        <div class="center-column"><div class="image-container"><img id= "squ" src="img/squ.png" height="200" width="200"/></div></div>
     </div>
 
     <div class="row">
@@ -46,3 +51,9 @@
     </div>
 
 </body>
+
+<script>
+const cir_variable = document.getElementById ('cir_id')
+const cir_audio = new Audio ('audio/Key_01.mp3')
+cir_variable.onpointerdown = () => cir_audio.play ()
+</script>
