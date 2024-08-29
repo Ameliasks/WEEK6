@@ -34,20 +34,20 @@
 
     <div class="row">
         <div class="left-column"><div class="image-container"><img id="cir_id" src="img/cir.png" height="200" width="200"/></div></div>
-        <div class="right-column"><div class="image-container"><img id="tri" src="img/tri.png" height="200" width="200"/></div></div>
-        <div class="center-column"><div class="image-container"><img id= "squ" src="img/squ.png" height="200" width="200"/></div></div>
+        <div class="right-column"><div class="image-container"><img id="tri_id" src="img/tri.png" height="200" width="200"/></div></div>
+        <div class="center-column"><div class="image-container"><img id= "squ_id" src="img/squ.png" height="200" width="200"/></div></div>
     </div>
 
     <div class="row">
-        <div class="left-column"><div class="image-container"><img src="img/hex.png" height="200" width="200"/></div></div>
-        <div class="right-column"><div class="image-container"><img src="img/rec.png" height="200" width="200"/></div></div>
-        <div class="center-column"><div class="image-container"><img src="img/sta.png" height="200" width="200"/></div></div>
+        <div class="left-column"><div class="image-container"><img id="hex_id" src="img/hex.png" height="200" width="200"/></div></div>
+        <div class="right-column"><div class="image-container"><img id="rec_id" src="img/rec.png" height="200" width="200"/></div></div>
+        <div class="center-column"><div class="image-container"><img id="sta_id" src="img/sta.png" height="200" width="200"/></div></div>
     </div>
 
     <div class="row">
-        <div class="left-column"><div class="image-container"><img src="img/trr.png" height="200" width="200"/></div></div>
-        <div class="right-column"><div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div></div>
-        <div class="center-column"><div class="image-container"><img src="img/her.png" height="200" width="200"/></div></div>
+        <div class="left-column"><div class="image-container"><img id="trr_id" src="img/trr.png" height="200" width="200"/></div></div>
+        <div class="right-column"><div class="image-container"><img id="sqr_id" src="img/sqr.png" height="200" width="200"/></div></div>
+        <div class="center-column"><div class="image-container"><img id="her_id" src="img/her.png" height="200" width="200"/></div></div>
     </div>
 
 </body>
@@ -56,4 +56,37 @@
 const cir_variable = document.getElementById ('cir_id')
 const cir_audio = new Audio ('audio/Key_01.mp3')
 cir_variable.onpointerdown = () => cir_audio.play ()
+
+const tri_variable = document.getElementById ('tri_id')
+const tri_audio = new Audio ('audio/Key_01.mp3')
+tri_variable.onpointerdown = () => tri_audio.play ()
+
+const squ_variable = document.getElementById ('squ_id')
+const squ_audio = new Audio ('audio/Key_01.mp3')
+squ_variable.onpointerdown = () => squ_audio.play ()
+
+const hex_variable = document.getElementById ('hex_id')
+const hex_audio = new Audio ('audio/Key_01.mp3')
+hex_variable.onpointerdown = () => hex_audio.play ()
+
+const rec_variable = document.getElementById ('rec_id')
+const rec_audio = new Audio ('audio/Key_01.mp3')
+rec_variable.onpointerdown = () => rec_audio.play ()
+
+const sta_variable = document.getElementById ('sta_id')
+const sta_audio = new Audio ('audio/Key_01.mp3')
+sta_variable.onpointerdown = () => sta_audio.play ()
+
+const trr_variable = document.getElementById ('trr_id')
+const trr_audio = new Audio ('audio/Key_01.mp3')
+trr_variable.onpointerdown = () => trr_audio.play ()
+
+const sqr_variable = document.getElementById ('sqr_id')
+const sqr_audio = new Audio ('audio/Key_01.mp3')
+sqr_variable.onpointerdown = () => sqr_audio.play ()
+
+const her_variable = document.getElementById ('her_id')
+const her_audio = new Audio ('audio/Key_01.mp3')
+her_variable.onpointerdown = () => her_audio.play ()
+
 </script>
