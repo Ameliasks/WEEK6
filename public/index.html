@@ -21,8 +21,8 @@
 
     <div class="row">
         <div class="image-container"><div class="image-container"> <img id="cir_id" src="img/Community@2x.png" height="180" width="180"/> </div>
-        <div class="image-container"><div class="image-container"><img id="tri_id" src="img/tri.png" height="180" width="180"/></div></div>
-        <div class="image-container"><div class="image-container"><img id= "squ_id" src="img/squ.png" height="180" width="180"/></div></div>
+        <div class="image-container"><div class="image-container"><img id="tri_id" src="img/Value@2x.png" height="180" width="180"/></div></div>
+        <div class="image-container"><div class="image-container"><img id= "squ_id" src="img/Security@2x.png" height="180" width="180"/></div></div>
 
     </div>
 
@@ -50,15 +50,15 @@ cir.onpointerout = () => cir.src = 'img/Community@2x.png'
 const tri = document.getElementById ('tri_id')
 const tri_audio = new Audio ('audio/Key_01.mp3')
 tri.onpointerdown = () => tri_audio.play ()
-tri.onpointerover = () => tri.src = 'img/squ.png'
-tri.onpointerout = () => tri.src = 'img/tri.png'
+tri.onpointerover = () => tri.src = 'img/Value_H@2x.png'
+tri.onpointerout = () => tri.src = 'img/Value@2x.png'
 
 
 const squ = document.getElementById ('squ_id')
 const squ_audio = new Audio ('audio/Key_01.mp3')
 squ.onpointerdown = () => squ_audio.play ()
-squ.onpointerover = () => squ.src = 'img/squ.png'
-squ.onpointerout = () => squ.src = 'img/tri.png'
+squ.onpointerover = () => squ.src = 'img/Security_H@2x.png'
+squ.onpointerout = () => squ.src = 'img/Security@2x.png'
 
 
 const hex = document.getElementById ('hex_id')
