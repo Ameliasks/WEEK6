@@ -20,23 +20,9 @@
 <body>
 
     <div class="row">
-        <div class="image-container"><div class="image-container">
-            
-            <img id="cir_id" src="img/Community@2x.png" height="180" width="180"
-            onmouseover= "this.src='img/Community_H@2x.png';"
-            onmouseout= "this.src='img/Community@2x.png';"
-            />
-        
-        </div>
-        
-        
-        <div class="image-container"><div class="image-container"><img id="tri_id" src="img/tri.png" height="180" width="180"/>
-        
-        </div></div>
-        
-        <div class="image-container"><div class="image-container"><img id= "squ_id" src="img/squ.png" height="180" width="180"/>
-        
-        </div></div>
+        <div class="image-container"><div class="image-container"> <img id="cir_id" src="img/Community@2x.png" height="180" width="180"/> </div>
+        <div class="image-container"><div class="image-container"><img id="tri_id" src="img/tri.png" height="180" width="180"/></div></div>
+        <div class="image-container"><div class="image-container"><img id= "squ_id" src="img/squ.png" height="180" width="180"/></div></div>
 
     </div>
 
@@ -66,34 +52,67 @@ cir_variable.onpointerdown = () => {
 
 const tri_variable = document.getElementById ('tri_id')
 const tri_audio = new Audio ('audio/Key_01.mp3')
-tri_variable.onpointerdown = () => tri_audio.play ()
+tri_variable.onpointerdown = () => {
+    
+    tri_audio.play ()
+    tri.src = 'img/Community@2x.png'
+    setTimeout (() => tri.src = 'img/Community_H@2x.png', 1000)
+}
 
 const squ_variable = document.getElementById ('squ_id')
 const squ_audio = new Audio ('audio/Key_01.mp3')
-squ_variable.onpointerdown = () => squ_audio.play ()
+squ_variable.onpointerdown = () => {
+    
+    squ_audio.play ()
+    squ.src = 'img/Community@2x.png'
+    setTimeout (() => squ.src = 'img/Community_H@2x.png', 1000)
+}
 
 const hex_variable = document.getElementById ('hex_id')
 const hex_audio = new Audio ('audio/Key_01.mp3')
-hex_variable.onpointerdown = () => hex_audio.play ()
+hex_variable.onpointerdown = () => {
+    
+    hex_audio.play ()
+    hex.src = 'img/Community@2x.png'
+    setTimeout (() => hex.src = 'img/Community_H@2x.png', 1000)
+}
 
 const rec_variable = document.getElementById ('rec_id')
 const rec_audio = new Audio ('audio/Key_01.mp3')
-rec_variable.onpointerdown = () => rec_audio.play ()
+rec_variable.onpointerdown = () => {
+    rec_audio.play ()
+    rec.src = 'img/Community@2x.png'
+    setTimeout (() => rec.src = 'img/Community_H@2x.png', 1000) 
+}
 
 const sta_variable = document.getElementById ('sta_id')
 const sta_audio = new Audio ('audio/Key_01.mp3')
-sta_variable.onpointerdown = () => sta_audio.play ()
+sta_variable.onpointerdown = () => {
+    sta_audio.play ()
+    sta.src = 'img/Community@2x.png'
+    setTimeout (() => sta.src = 'img/Community_H@2x.png', 1000)
+}
 
 const trr_variable = document.getElementById ('trr_id')
 const trr_audio = new Audio ('audio/Key_01.mp3')
-trr_variable.onpointerdown = () => trr_audio.play ()
-
+trr_variable.onpointerdown = () => {
+    trr_audio.play ()
+    trr.src = 'img/Community@2x.png'
+    setTimeout (() => trr.src = 'img/Community_H@2x.png', 1000)
+}
 const sqr_variable = document.getElementById ('sqr_id')
 const sqr_audio = new Audio ('audio/Key_01.mp3')
-sqr_variable.onpointerdown = () => sqr_audio.play ()
-
+sqr_variable.onpointerdown = () => {
+    sqr_audio.play ()
+    sqr.src = 'img/Community@2x.png'
+    setTimeout (() => sqr.src = 'img/Community_H@2x.png', 1000)
+}
 const her_variable = document.getElementById ('her_id')
 const her_audio = new Audio ('audio/Key_01.mp3')
-her_variable.onpointerdown = () => her_audio.play ()
+her_variable.onpointerdown = () =>{
+    her_audio.play ()
+    her.src = 'img/Community@2x.png'
+    setTimeout (() => her.src = 'img/Community_H@2x.png', 1000)
+}
 
 </script>
